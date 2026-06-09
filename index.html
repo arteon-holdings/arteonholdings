@@ -19,7 +19,8 @@
     --rule: rgba(28,28,26,0.12);
   }
 
-  html { font-size: 16px; scroll-behavior: smooth; }
+  html { font-size: 18px; scroll-behavior: smooth; }
+  .page-wrap { max-width: 1400px; margin: 0 auto; width: 100%; }
 
   body {
     background: var(--cream);
@@ -50,6 +51,7 @@
     text-decoration: none;
   }
 
+  .wordmark-link { text-decoration: none; display: inline-block; }
   .nav-contact {
     font-size: 0.7rem;
     letter-spacing: 0.18em;
@@ -109,7 +111,7 @@
   }
 
   .hero-body {
-    font-size: 0.95rem;
+    font-size: 1.05rem;
     line-height: 1.9;
     color: var(--ink-light);
     max-width: 38ch;
@@ -154,7 +156,7 @@
   }
 
   .section p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.95;
     color: var(--ink-light);
     font-weight: 300;
@@ -166,16 +168,14 @@
   .pillars {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0;
+    gap: 2rem;
     border-top: 0.5px solid var(--rule);
+    padding: 4rem 4rem;
   }
 
   .pillar {
-    padding: 3.5rem 2.5rem;
-    border-right: 0.5px solid var(--rule);
+    padding: 0;
   }
-
-  .pillar:last-child { border-right: none; }
 
   .pillar-number {
     font-family: 'Cormorant Garamond', serif;
@@ -195,7 +195,7 @@
   }
 
   .pillar p {
-    font-size: 0.85rem;
+    font-size: 0.95rem;
     line-height: 1.9;
     color: var(--ink-light);
     font-weight: 300;
@@ -227,7 +227,7 @@
   .contact-right { display: flex; flex-direction: column; gap: 2rem; }
 
   .contact-right p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     line-height: 1.9;
     color: var(--ink-light);
   }
@@ -285,27 +285,37 @@
     .hero-right { padding: 3rem 1.5rem; }
     .section { padding: 3.5rem 1.5rem; }
     .section-grid { grid-template-columns: 1fr; gap: 2.5rem; }
-    .pillars { grid-template-columns: 1fr; }
-    .pillar { border-right: none; border-bottom: 0.5px solid var(--rule); }
-    .pillar:last-child { border-bottom: none; }
+    .pillars { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2rem; }
     .contact { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; }
     footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
   }
 </style>
 </head>
 <body>
+<div class="page-wrap">
 
 <nav>
-  <a href="#" class="wordmark">Arteon Holdings</a>
+  <a href="#" class="wordmark-link">
+    <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" height="64" aria-label="Arteon Holdings">
+      <defs>
+        <style>
+          @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&display=swap');
+          .arteon { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 52px; letter-spacing: 0.15em; fill: #1C1C1A; }
+          .holdings { font-family: 'Cormorant Garamond', serif; font-weight: 300; font-size: 26px; letter-spacing: 0.62em; fill: #6B6860; }
+        </style>
+      </defs>
+      <text class="arteon" x="20" y="65">ARTEON</text>
+      <text class="holdings" x="22" y="95">HOLDINGS</text>
+    </svg>
+  </a>
   <a href="mailto:hello@arteonholdings.uk" class="nav-contact">Get in touch</a>
 </nav>
 
 <section class="hero">
   <div class="hero-left">
-    <p class="eyebrow">Arteon Holdings</p>
     <h1>Built with care.<br><em>Continued</em><br>with the same.</h1>
     <div class="hero-rule"></div>
-    <p class="hero-body">Some businesses are built to be sold. Others are built because someone saw a need, filled it well, and kept going — through difficulty, through change, through years of quiet persistence. We are interested in the second kind.</p>
+    <p class="hero-body">Businesses that endure are rarely built to be sold. They succeed because someone saw a need, filled it well, and kept going: through difficulty, through change, through years of quiet persistence. We're interested in getting to know such businesses.</p>
   </div>
   <div class="hero-right">
     <!-- intentionally spare — white space is part of the design -->
@@ -317,13 +327,13 @@
   <div class="section-grid">
     <div>
       <h2>A business with real foundations.</h2>
-      <p>We look for well-run B2B businesses with genuine client relationships, good people, and an owner who built something worth continuing. Not the loudest or the fastest-growing. The ones with depth.</p>
-      <p>We are drawn to businesses where the value lies in knowledge, relationships, and craft — where what has been built is not easily replicated, and where the right leadership can quietly unlock what was always there.</p>
+      <p>We're drawn to businesses where the value lies in knowledge, relationships, and craft; where what has been built is not easily replicated, and where the right leadership can quietly unlock what was always there.</p>
+      <p>We look for those that have earned the respect of discerning clients, with dedicated teams and an owner already thinking about what comes next.</p>
     </div>
     <div>
-      <h2>An owner ready for the next chapter.</h2>
-      <p>The most important conversations are not about price. They are about what happens to the people, the clients, and the culture that someone spent years building.</p>
-      <p>We take time to understand what matters most to the people who made a business what it is. The transition is shaped around them — not around a template.</p>
+      <h2>Leadership ready for the next chapter.</h2>
+      <p>The most important conversations aren't about price. They're about people, clients, and the culture that someone spent years building.</p>
+      <p>We take the time to understand what matters most to the people who made a business what it is. The transition is shaped around them; not templates or algorithms.</p>
     </div>
   </div>
 </section>
@@ -332,34 +342,34 @@
   <div class="pillar">
     <span class="pillar-number">I</span>
     <h3>Patience</h3>
-    <p>We are not constrained by fund cycles or the pressure to deploy capital quickly. We move when something is right.</p>
+    <p>We aren't constrained by fund cycles or the pressure to deploy capital quickly. We move when trust has been established.</p>
   </div>
   <div class="pillar">
     <span class="pillar-number">II</span>
     <h3>Clarity</h3>
-    <p>Decades of experience evaluating businesses across the world. We understand what makes something genuinely valuable.</p>
+    <p>With decades of experience evaluating companies across the UK, Europe and emerging Asia, we understand what gives a business its essence, and how to honour it.</p>
   </div>
   <div class="pillar">
     <span class="pillar-number">III</span>
     <h3>Continuity</h3>
-    <p>No investors to answer to. No quarterly targets. Just a considered approach to finding the right business and running it well.</p>
+    <p>No investors to answer to. No quarterly targets. Just a genuine commitment to partnering with the right businesses, and to helping them navigate what comes next.</p>
   </div>
 </div>
 
 <section class="contact">
   <div>
-    <h2>If something<br>in this <em>resonates.</em></h2>
+    <h2>Does this<br><em>resonate</em><br>with you?</h2>
   </div>
   <div class="contact-right">
-    <p>We would welcome a quiet conversation — whether you are a founder thinking about what comes next, or an advisor who knows someone who might be.</p>
+    <p>We'd welcome a quiet conversation. No forms, no pitch decks, no pressure.</p>
     <a href="mailto:hello@arteonholdings.uk" class="contact-email">hello@arteonholdings.uk</a>
   </div>
 </section>
 
 <footer>
-  <p>Arteon Holdings Ltd &nbsp;·&nbsp; Registered in England and Wales</p>
-  <p>© 2026</p>
+  <p>© 2026 Arteon Holdings Ltd &nbsp;·&nbsp; Registered in England and Wales</p>
 </footer>
 
+</div>
 </body>
 </html>

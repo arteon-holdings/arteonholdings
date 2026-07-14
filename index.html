@@ -41,15 +41,6 @@
     align-items: center;
     border-bottom: 0.5px solid var(--rule);
   }
-  .wordmark {
-    font-family: 'Cormorant Garamond', serif;
-    font-weight: 300;
-    font-size: 1.1rem;
-    letter-spacing: 0.25em;
-    text-transform: uppercase;
-    color: var(--ink);
-    text-decoration: none;
-  }
   .wordmark-link { text-decoration: none; display: inline-block; }
   .nav-contact {
     font-size: 0.7rem;
@@ -75,13 +66,6 @@
     justify-content: center;
     border-right: 0.5px solid var(--rule);
   }
-  .eyebrow {
-    font-size: 0.65rem;
-    letter-spacing: 0.22em;
-    text-transform: uppercase;
-    color: var(--gold);
-    margin-bottom: 2.5rem;
-  }
   h1 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
@@ -90,10 +74,7 @@
     color: var(--ink);
     margin-bottom: 1.5rem;
   }
-  h1 em {
-    font-style: italic;
-    color: var(--gold);
-  }
+  h1 em { font-style: italic; color: var(--gold); }
   .hero-rule {
     width: 2.5rem;
     height: 0.5px;
@@ -109,9 +90,10 @@
   }
   .hero-right {
     background-image: url('hero_precision.jpg');
-    background-size: cover;
-    background-position: 60% center;
+    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
+    background-color: var(--cream);
   }
   /* SECTIONS */
   .section {
@@ -191,16 +173,9 @@
     line-height: 1.2;
     color: var(--ink);
   }
-  .contact h2 em {
-    font-style: italic;
-    color: var(--gold);
-  }
+  .contact h2 em { font-style: italic; color: var(--gold); }
   .contact-right { display: flex; flex-direction: column; gap: 2rem; }
-  .contact-right p {
-    font-size: 1rem;
-    line-height: 1.9;
-    color: var(--ink-light);
-  }
+  .contact-right p { font-size: 1rem; line-height: 1.9; color: var(--ink-light); }
   .contact-email {
     display: inline-block;
     font-size: 0.75rem;
@@ -221,21 +196,13 @@
     justify-content: space-between;
     align-items: center;
   }
-  footer p {
-    font-size: 0.7rem;
-    letter-spacing: 0.1em;
-    color: var(--ink-light);
-  }
+  footer p { font-size: 0.7rem; letter-spacing: 0.1em; color: var(--ink-light); }
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
     to { opacity: 1; transform: translateY(0); }
   }
-  .hero-left > * {
-    opacity: 0;
-    animation: fadeUp 0.9s ease forwards;
-  }
-  .eyebrow { animation-delay: 0.1s; }
+  .hero-left > * { opacity: 0; animation: fadeUp 0.9s ease forwards; }
   h1 { animation-delay: 0.25s; }
   .hero-rule { animation-delay: 0.4s; }
   .hero-body { animation-delay: 0.5s; }
@@ -281,9 +248,7 @@
     <div class="hero-rule"></div>
     <p class="hero-body">Businesses that endure are rarely built to be sold. They succeed because someone saw a need, filled it well, and kept going: through difficulty, through change, through years of quiet persistence. We're interested in getting to know such businesses.</p>
   </div>
-  <div class="hero-right">
-    <!-- intentionally spare — white space is part of the design -->
-  </div>
+  <div class="hero-right"></div>
 </section>
 <section class="section">
   <p class="section-label">What we look for</p>

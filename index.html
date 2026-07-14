@@ -63,7 +63,8 @@
     padding: 4.5rem 4rem;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
+    padding-top: 5rem;
     border-right: 0.5px solid var(--rule);
   }
   h1 {
@@ -210,8 +211,8 @@
   @media (max-width: 900px) {
     nav { padding: 1.5rem 1.5rem; }
     .hero { grid-template-columns: 1fr; min-height: auto; }
-    .hero-left { padding: 4rem 1.5rem; border-right: none; border-bottom: 0.5px solid var(--rule); }
-    .hero-right { height: 300px; background-position: center center; margin: 0 1.5rem 1.5rem; border-radius: 4px; }
+    .hero-left { padding: 3rem 1rem; justify-content: flex-start; padding-top: 3rem; border-right: none; border-bottom: 0.5px solid var(--rule); }
+    .hero-right { height: 300px; background-position: center center; margin: 0 0.75rem 1rem; border-radius: 4px; }
     .section { padding: 3.5rem 1.5rem; }
     .section-grid { grid-template-columns: 1fr; gap: 2.5rem; }
     .pillars { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2rem; }
@@ -220,7 +221,7 @@
   }
   @media (max-width: 900px) and (orientation: landscape) {
     .hero { grid-template-columns: 2fr 3fr; }
-    .hero-right { height: auto !important; margin: 0; border-radius: 0; }
+    .hero-right { height: auto !important; margin: 1rem 1rem 1rem 0; border-radius: 4px; }
   }
 </style>
 </head>

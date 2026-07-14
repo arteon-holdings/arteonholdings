@@ -14,7 +14,6 @@
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
   :root {
     --cream: #F7F4EF;
     --ink: #1C1C1A;
@@ -23,10 +22,8 @@
     --gold-light: #C4A882;
     --rule: rgba(28,28,26,0.12);
   }
-
   html { font-size: 18px; scroll-behavior: smooth; }
   .page-wrap { max-width: 1400px; margin: 0 auto; width: 100%; }
-
   body {
     background: var(--cream);
     color: var(--ink);
@@ -36,7 +33,6 @@
     display: flex;
     flex-direction: column;
   }
-
   /* NAV */
   nav {
     padding: 1.5rem 4rem;
@@ -45,7 +41,6 @@
     align-items: center;
     border-bottom: 0.5px solid var(--rule);
   }
-
   .wordmark {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
@@ -55,7 +50,6 @@
     color: var(--ink);
     text-decoration: none;
   }
-
   .wordmark-link { text-decoration: none; display: inline-block; }
   .nav-contact {
     font-size: 0.7rem;
@@ -67,16 +61,13 @@
     padding-bottom: 2px;
     transition: color 0.3s, border-color 0.3s;
   }
-
   .nav-contact:hover { color: var(--gold); border-color: var(--gold); }
-
   /* HERO */
   .hero {
     display: grid;
     grid-template-columns: 2fr 3fr;
     min-height: 70vh;
   }
-
   .hero-left {
     padding: 4.5rem 4rem;
     display: flex;
@@ -84,7 +75,6 @@
     justify-content: center;
     border-right: 0.5px solid var(--rule);
   }
-
   .eyebrow {
     font-size: 0.65rem;
     letter-spacing: 0.22em;
@@ -92,7 +82,6 @@
     color: var(--gold);
     margin-bottom: 2.5rem;
   }
-
   h1 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
@@ -101,19 +90,16 @@
     color: var(--ink);
     margin-bottom: 1.5rem;
   }
-
   h1 em {
     font-style: italic;
     color: var(--gold);
   }
-
   .hero-rule {
     width: 2.5rem;
     height: 0.5px;
     background: var(--gold);
     margin-bottom: 1.5rem;
   }
-
   .hero-body {
     font-size: 1.05rem;
     line-height: 1.9;
@@ -121,20 +107,17 @@
     max-width: 38ch;
     font-weight: 300;
   }
-
   .hero-right {
     background-image: url('hero_precision.jpg');
     background-size: cover;
     background-position: 60% center;
     background-repeat: no-repeat;
   }
-
   /* SECTIONS */
   .section {
     padding: 5rem 4rem;
     border-top: 0.5px solid var(--rule);
   }
-
   .section-label {
     font-size: 0.65rem;
     letter-spacing: 0.22em;
@@ -142,13 +125,11 @@
     color: var(--gold);
     margin-bottom: 3rem;
   }
-
   .section-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
   }
-
   .section h2 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
@@ -157,16 +138,13 @@
     margin-bottom: 1.5rem;
     color: var(--ink);
   }
-
   .section p {
     font-size: 1rem;
     line-height: 1.95;
     color: var(--ink-light);
     font-weight: 300;
   }
-
   .section p + p { margin-top: 1.2rem; }
-
   /* PILLARS */
   .pillars {
     display: grid;
@@ -175,11 +153,7 @@
     border-top: 0.5px solid var(--rule);
     padding: 4rem 4rem;
   }
-
-  .pillar {
-    padding: 0;
-  }
-
+  .pillar { padding: 0; }
   .pillar-number {
     font-family: 'Cormorant Garamond', serif;
     font-size: 2rem;
@@ -188,7 +162,6 @@
     margin-bottom: 1.5rem;
     display: block;
   }
-
   .pillar h3 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 400;
@@ -196,14 +169,12 @@
     margin-bottom: 1rem;
     color: var(--ink);
   }
-
   .pillar p {
     font-size: 0.95rem;
     line-height: 1.9;
     color: var(--ink-light);
     font-weight: 300;
   }
-
   /* CONTACT */
   .contact {
     padding: 6rem 4rem;
@@ -213,7 +184,6 @@
     gap: 4rem;
     align-items: center;
   }
-
   .contact h2 {
     font-family: 'Cormorant Garamond', serif;
     font-weight: 300;
@@ -221,20 +191,16 @@
     line-height: 1.2;
     color: var(--ink);
   }
-
   .contact h2 em {
     font-style: italic;
     color: var(--gold);
   }
-
   .contact-right { display: flex; flex-direction: column; gap: 2rem; }
-
   .contact-right p {
     font-size: 1rem;
     line-height: 1.9;
     color: var(--ink-light);
   }
-
   .contact-email {
     display: inline-block;
     font-size: 0.75rem;
@@ -246,9 +212,7 @@
     padding-bottom: 3px;
     transition: color 0.3s;
   }
-
   .contact-email:hover { color: var(--gold); }
-
   /* FOOTER */
   footer {
     padding: 2rem 4rem;
@@ -257,29 +221,24 @@
     justify-content: space-between;
     align-items: center;
   }
-
   footer p {
     font-size: 0.7rem;
     letter-spacing: 0.1em;
     color: var(--ink-light);
   }
-
   /* ANIMATIONS */
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(18px); }
     to { opacity: 1; transform: translateY(0); }
   }
-
   .hero-left > * {
     opacity: 0;
     animation: fadeUp 0.9s ease forwards;
   }
-
   .eyebrow { animation-delay: 0.1s; }
   h1 { animation-delay: 0.25s; }
   .hero-rule { animation-delay: 0.4s; }
   .hero-body { animation-delay: 0.5s; }
-
   /* RESPONSIVE */
   @media (max-width: 768px) {
     nav { padding: 1.5rem 1.5rem; }
@@ -291,18 +250,15 @@
     .pillars { grid-template-columns: 1fr; padding: 3rem 1.5rem; gap: 2rem; }
     .contact { grid-template-columns: 1fr; padding: 3.5rem 1.5rem; }
     footer { padding: 1.5rem; flex-direction: column; gap: 0.5rem; text-align: center; }
-
-   @media (max-width: 768px) and (orientation: landscape) {
-   .hero { grid-template-columns: 2fr 3fr; }
-   .hero-right { height: auto; }
-   }
-   
+  }
+  @media (max-width: 768px) and (orientation: landscape) {
+    .hero { grid-template-columns: 2fr 3fr; }
+    .hero-right { height: auto; }
   }
 </style>
 </head>
 <body>
 <div class="page-wrap">
-
 <nav>
   <a href="#" class="wordmark-link">
     <svg viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg" height="64" aria-label="Arteon Holdings">
@@ -319,7 +275,6 @@
   </a>
   <a href="mailto:hello@arteonholdings.uk" class="nav-contact">Get in touch</a>
 </nav>
-
 <section class="hero">
   <div class="hero-left">
     <h1>Built with care.<br><em>Continued</em><br>with the same.</h1>
@@ -330,7 +285,6 @@
     <!-- intentionally spare — white space is part of the design -->
   </div>
 </section>
-
 <section class="section">
   <p class="section-label">What we look for</p>
   <div class="section-grid">
@@ -346,7 +300,6 @@
     </div>
   </div>
 </section>
-
 <div class="pillars">
   <div class="pillar">
     <span class="pillar-number">I</span>
@@ -364,7 +317,6 @@
     <p>No investors to answer to. No quarterly targets. Just a genuine commitment to partnering with the right businesses, and to helping them navigate what comes next.</p>
   </div>
 </div>
-
 <section class="contact">
   <div>
     <h2>Does this<br><em>resonate</em><br>with you?</h2>
@@ -374,11 +326,9 @@
     <a href="mailto:hello@arteonholdings.uk" class="contact-email">hello@arteonholdings.uk</a>
   </div>
 </section>
-
 <footer>
   <p>© 2026 Arteon Holdings Ltd &nbsp;·&nbsp; Registered in England and Wales</p>
 </footer>
-
 </div>
 </body>
 </html>
